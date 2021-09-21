@@ -1,0 +1,191 @@
+body {
+ font-family: Arial, Helvetica, sans-serif;
+ line-height: 1.3;
+ max-width: 1200px;
+ margin:auto;
+ background: rgb(2,0,36);
+ background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(3,3,87,1) 31%, rgba(11,0,136,1) 100%);
+ background-repeat: no-repeat;
+ background-color: rgba(11,0,136,1);
+}
+
+/* unvisited and visited link */
+a:link, a:visited {
+ color: black;
+}
+
+/* mouse over link */ /* selected link */
+a:hover, a:active {
+ color: blue;
+}
+
+.header {
+  padding: 20px; /* some padding */
+  text-align: center;
+  background: #1abc9c; /* green background */
+  color: white; /* white text color */
+  /*background-image: url("images/gent.jpg");*/
+  background-image: radial-gradient(Black, white, blue, Black 70%); /*#333*/
+  background-color: #cccccc; /* Used if the image is unavailable */
+  height: 120px; /* You must set a specified height */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+.header h1 {
+  font-size: 36px;
+  padding-top: 17px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden; /* Hide overflow */
+  background-color: #333; /* Dark background color */
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left; /* Make sure that the links stay side-by-side */
+  display: block; /* Change the display to block, for responsive reasons (see below) */
+  color: white; /* White text color */
+  text-align: center; /* Center the text */
+  padding: 14px 20px; /* Add some padding */
+  text-decoration: none; /* Remove underline */
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right; /* Float a link to the right */
+}
+
+/* Change color on hover/mouse-over */
+.navbar a:hover {
+  background-color: #ddd; /* Grey background color */
+  color: black; /* Black text color */
+}
+
+/* Ensure proper sizing. Use CSS Flexbox to handle layout */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Column container */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 30%; /* Set the width of the sidebar */
+  background-color: #f1f1f1; /* Grey background color */
+  padding: 15px 30px; /* Some padding */
+  text-align: center;
+}
+.side h1 {
+  text-align: center;
+}
+
+
+/* Main column */
+.main {
+  flex: 70%; /* Set the width of the main content */
+  background-color: white; /* White background color */
+  padding: 15px 25px; /* Some padding */
+}
+
+.article {
+  border-bottom: solid;
+  border-bottom-width: thin;
+  border-color: #f1f1f1;
+  padding-top: 15px;
+}
+
+.profilepic{
+  width: 130px;
+  border-radius: 25px;
+}
+.customIndent {
+  padding-left: 2em;
+  list-style-type: square;
+}
+
+.articlepic {
+  max-width: 400px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+.centerimage {
+  text-align: center;
+}
+
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+ width: 100%; /* Full width */
+ padding: 12px; /* Some padding */
+ border: 1px solid #ccc; /* Gray border */
+ border-radius: 4px; /* Rounded borders */
+ box-sizing: border-box; /* Make sure that padding and width stays in place */
+ margin-top: 6px; /* Add a top margin */
+ margin-bottom: 16px; /* Bottom margin */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+ background-color: #04AA6D;
+ color: white;
+ padding: 12px 20px;
+ border: none;
+ border-radius: 4px;
+ cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+ background-color: #45a049;
+}
+
+.customBackground{
+  background-image: gradient(Black, white);
+}
+
+/* Add a background color and some padding around the form */
+.formcontainer {
+width: 450px;
+ border-radius: 5px;
+ background-color: #f2f2f2;
+ padding: 20px;
+ margin:auto;
+}
+
+.footer {
+  padding: 20px; /* Some padding */
+  text-align: center; /* Center text*/
+  background: #ddd;  Grey background */
+}
+a.footerlink {
+  text-decoration: none;
+  color: Grey;
+}
+p.footertext {
+  color: Grey;
+}
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {
+    flex-direction: column;
+  }
+}
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+  .articlepic {
+    width: 60%;
+  }
+}

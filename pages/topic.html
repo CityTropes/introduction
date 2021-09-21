@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Space Exploration</title>
+<meta charset="UTF-8">
+<link rel='stylesheet' href='../styles/styles.css'/>
+<link rel='stylesheet'  href='../styles/styletopic.css'/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+  <header class="header">
+    <h1>Space Exploration</h1>
+  </header>
+
+  <nav class="navbar">
+    <a href="../index.html">Home</a>
+    <a href="topic.html">Space Exploration</a>
+    <a href="nothing.html">Nothing</a>
+    <a href="contact.html" class="right">Contact</a>
+  </nav>
+
+
+  <div class="row">
+    <section class="side">
+      <h2>Pioneer Top Dog</h2>
+      <p><br></p>
+      <p>
+        <img class="profilepic" src='../images/laika.png' alt="profile picture"/>
+      </p>
+      <p>
+        <strong>Name:</strong> Laika<br>
+        <strong>Age:</strong> 3 (RIP)<br>
+        <strong>Location: </strong> Low Earth orbit<br>
+        <strong>Occupation:</strong> Astronaut<br>
+      <p><br></p>
+      <p>
+         In November 1957, I became the first animal launched into Earth orbit!<br>
+         <br>The sensors showed my hearth rate was 103 beats/min before launch and increased to 240 beats/min during the early acceleration.
+         <br><br>After approximately five to seven hours into the flight, I died from overheating.
+         <br><br>I proved that a living passenger could survive being launched into orbit and endure a micro-g environment, paving the way for human spaceflight.
+      </p>
+    </section>
+
+    <section class="main">
+      <h1>Space Exploration &#127768;</h1>
+      <!-- <p><br></p> -->
+      <article class="article">
+        <h1>Introduction</h1>
+        <p>
+          <br>I chose "Space Exploration" as my topic. On this page some loosely related information will be presented in different ways. I also included some sources and -because I'm new to this- work methods.
+          <br>
+          <p>
+            <div class = "centerimage">
+              <img class="articlepic" src='../images/space_sunrise.png' alt="space picture"/>
+              <br>&#128072; This page is dedicated to Laika, the first dog in space. &#128640;
+            </div>
+        </p>
+
+        <p><br></p>
+      </article>
+
+      <article class="article">
+        <h1>Space News</h1>
+        <p><br>
+          Let's get up-to-date with space! To get us started I included and edited a RSS-feed with the latest news from NASA:
+        </p>
+        <p><br>
+          <script language="JavaScript" src="https://www.feedroll.com/rssviewer/feed2js.php?src=https%3A%2F%2Fwww.nasa.gov%2Frss%2Fdyn%2Fbreaking_news.rss&chan=y&num=5&date=y&targ=y&utf=y&css=rssbox"  charset="UTF-8" type="text/javascript"></script>
+          <noscript>
+            <a href="https://www.feedroll.com/rssviewer/feed2js.php?src=https%3A%2F%2Fwww.nasa.gov%2Frss%2Fdyn%2Fbreaking_news.rss&chan=y&num=5&date=y&targ=y&utf=y&css=rssbox&html=y">View RSS feed</a>
+          </noscript>
+        </p>
+        <p><br>
+          You can include a news feed of your choice in your website by following/adjusting these steps:
+          <br><br>
+          <div class = "customIndent2">
+          <ol class="customIndent2">
+            <li>Look online for the content you want. I found mine on <a href='https://www.nasa.gov/content/nasa-rss-feeds' target='_blank'>NASA RSS Feeds</a>.</li>
+            <li>If you're new to this, you can generate JavaScript from your RSS-url on a site like <a href='https://www.feedroll.com/rssviewer/' target='_blank'>feedroll RSS-viewer</a>.</li>
+            <li>Next, you can <a href='https://www.feedroll.com/rssviewer/style.php' target='_blank'>style your feed</a> with CSS.</li>
+            <li>Lastly, add all code snippets to your project files. Adjust details to fit your website.</li>
+          </ol>
+        </div>
+        </p>
+        <p><br></p>
+        <p>Good luck and happy reading!
+        </p>
+        <p><br></p>
+      </article>
+
+      <article class="article">
+        <h1>Dream in lightyears</h1>
+        <p><br>
+          As you know, distances across the vast universe are measured in lightyears (a unit of astronomical distance equivalent to the distance that light travels in one year).
+          The distance from the Sun to Earth is 0,000015874 lightyear. It's about 4.246 lightyears to the next star: Proxima Centauri.
+          Try putting these numbers into the converter below to get a sense of the gigantic scale...
+        </p>
+        <div class = "customIndent2">
+          <p><br><strong>Distance Converter</strong></p>
+          <p><br></p>
+          <p>Type a value in the 'Lightyears' field to convert the value to kilometers (e.g. 4.246):</p>
+          <p><br></p>
+          <p>
+            <label>Distance in lightyears: </label>
+            <input id="inputLightyears" type="number" placeholder="Lightyears" oninput="distanceConverter(this.value)" onchange="distanceConverter(this.value)">
+          </p>
+          <p>Distance in kilometers: <span id="outputKilo"></span></p>
+
+          <script>
+            function distanceConverter(valNum) {
+            document.getElementById("outputKilo").innerHTML=valNum*9460730472580;
+          }
+          </script>
+        </div>
+        <p><br>
+          I made this converter by adjusting a script from <a href='https://www.w3schools.com/howto/howto_js_speed_converter.asp' target='_blank'>w3schools</a> that was originally used for mph to kph convertion.
+        </p>
+        <p><br></p>
+      </article>
+
+      <article class="article">
+        <h1>Gravitational slingshot</h1>
+        <p>
+          <br>Gravity assistance can be used to accelerate a spacecraft, that is, to increase or decrease its speed or redirect its path. The "assist" is provided by the motion of the gravitating body as it pulls on the spacecraft (read more on <a href='https://en.wikipedia.org/wiki/Gravity_assist' target='_blank'>Wiki</a>).
+          <br>
+          <p>
+            <div class = "centerimage">
+              <img class="articlepic" src='../images/voyager1_trajectory.gif' alt="voyager1 trajectory picture"/>
+              <br>Voyager 1 using gravity assistance from Jupiter and Saturn.
+            </div>
+        </p>
+
+        <p><br></p>
+      </article>
+
+    </section>
+  </div>
+
+  <footer class="footer">
+    <h3>
+      <a class="footerlink" href='https://github.com/CityTropes' target='_blank'>&#169; github.com/CityTropes</a>
+    </h3>
+    <p class="footertext">Last updated on September 22nd, 2021</p>
+  </footer>
+
+
+</body>
+</html>
