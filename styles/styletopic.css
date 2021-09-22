@@ -144,7 +144,7 @@ p.rss-title {padding:0.5em;}
      }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 460px) {
      .navbar a {
        float: none;
        width: 100%;
