@@ -1,13 +1,12 @@
 .header {
-  padding: 20px; /* some padding */
+  padding: 20px;
   text-align: center;
-  background: #1abc9c; /* green background */
-  color: white; /* white text color */
-  /*background-image: url("images/gent.jpg");*/
+  background: #1abc9c;
+  color: white;
   background-image: radial-gradient(Black, yellow, orange, Black 65%); /*#333*/
   background-color: #cccccc; /* Used if the image is unavailable */
   height: 120px; /* You must set a specified height */
-  background-repeat: no-repeat; /* Do not repeat the image */
+  background-repeat: no-repeat;
   background-size: cover; /* Resize the background image to cover the entire container */
 }
 .header h1 {
@@ -135,8 +134,23 @@ p.rss-title {padding:0.5em;}
    color: white;
    }
 
+   /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+     .row {
+       flex-direction: column;
+     }
+     .articlepic {
+       width: 80%;
+     }
+}
 
-   @media screen and (max-width: 400px) {
+@media screen and (max-width: 400px) {
+     .navbar a {
+       float: none;
+       width: 100%;
+     }
      .articlepic {
        width: 60%;
      }
+
+   }

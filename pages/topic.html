@@ -24,23 +24,69 @@
 
   <div class="row">
     <section class="side">
-      <h2>Pioneer Top Dog</h2>
+      <h2>Wall of Fame</h2>
       <p><br></p>
       <p>
         <img class="profilepic" src='../images/laika.png' alt="profile picture"/>
       </p>
       <p>
         <strong>Name:</strong> Laika<br>
-        <strong>Age:</strong> 3 (RIP)<br>
+        <strong>Age:</strong> 3 years (RIP)<br>
         <strong>Location: </strong> Low Earth orbit<br>
         <strong>Occupation:</strong> Astronaut<br>
       <p><br></p>
       <p>
-         In November 1957, I became the first animal launched into Earth orbit!<br>
+         In November 1957, I became on of the the first animals launched into Earth orbit!<br>
          <br>The sensors showed my hearth rate was 103 beats/min before launch and increased to 240 beats/min during the early acceleration.
          <br><br>After approximately five to seven hours into the flight, I died from overheating.
          <br><br>I proved that a living passenger could survive being launched into orbit and endure a micro-g environment, paving the way for human spaceflight.
       </p>
+
+      <p>
+      <br><br>
+      &#127756;
+      <br><br><br>
+      </p>
+
+      <p>
+        <img class="profilepic" src='../images/tardigrade.png' alt="tardigrade picture"/>
+      </p>
+      <p>
+        <strong>Name:</strong> Tardigrades<br>
+        <strong>Age:</strong> 2 years (non-dormant)<br>
+        <strong>Location: </strong> Outer space<br>
+        <strong>Occupation:</strong> Astronaut<br>
+      <p><br></p>
+      <p>
+         In 2007, tardigrades were the first animals to survive outer space!<br>
+         <br>Tardigrades are extremophiles: lack of oxygen, radiation, freezing cold, dehydration… Nothing phases a tardigrade.
+         <br><br>They orbited the Earth outside a rocket for 10 days. When they were re-hydrated on their return to Earth, scientists discovered 68% had survived the extreme cold and space radiation.
+      </p>
+
+      <p>
+      <br><br>
+      &#127756;
+      <br><br><br>
+      </p>
+
+      <p>
+        <img class="profilepic" src='../images/rover.png' alt="Sojourner picture"/>
+      </p>
+      <p>
+        <strong>Name:</strong> Sojourner<br>
+        <strong>Age:</strong> 83 days (RIP)<br>
+        <strong>Location: </strong> Mars<br>
+        <strong>Occupation:</strong> Planetary rover<br>
+      <p><br></p>
+      <p>
+         In 1997, the first successful rover on Mars, called Sojourner, was delivered to the surface by the Pathfinder lander!
+         <br><br>Pathfinder deployed a parachute and also shed the heat shield after re-entry. To touch down on the surface, a cocoon of airbags was used.
+         <br><br>The rover analized Martian dust & atmosphere and sent more than 550 pictures. The lander sent more than 16,500 images.
+      </p>
+
+
+
+
     </section>
 
     <section class="main">
@@ -49,7 +95,7 @@
       <article class="article">
         <h1>Introduction</h1>
         <p>
-          <br>I chose "Space Exploration" as my topic. On this page some loosely related information will be presented in different ways. I also included some sources and -because I'm new to this- work methods.
+          <br>I chose "Space Exploration" as my topic. On this page some loosely related information is presented in different ways. I also included some sources and -because I'm new to this- work methods.
           <br>
           <p>
             <div class = "centerimage">
@@ -91,6 +137,23 @@
       </article>
 
       <article class="article">
+        <h1>Gravitational slingshot</h1>
+        <p>
+          <br>Getting into space requires a lot of energy! Gravity assistance can be used to accelerate a spacecraft, that is, to increase or decrease its speed or redirect its path. The "assist" is provided by the motion of the gravitating body as it pulls on the spacecraft (read more on <a href='https://en.wikipedia.org/wiki/Gravity_assist' target='_blank'>Wiki</a>).
+          <br>
+          <p>
+            <div class = "centerimage">
+              <img class="articlepic" src='../images/voyager1_trajectory.gif' alt="voyager1 trajectory picture"/>
+              <br>Voyager 1 using gravity assistance from Jupiter and Saturn.
+            </div>
+        </p>
+        <p><br>
+          Notice in the bottom-left corner how the Voyager slows down (to 13km/s) after launch, but picks up speed when it passes Jupiter (24km/s). Right now the Voyager 1 is flying at 56327km/h. Yeeting stuff into space sure looks fun!
+        </p>
+        <p><br></p>
+      </article>
+
+      <article class="article">
         <h1>Dream in lightyears</h1>
         <p><br>
           As you know, distances across the vast universe are measured in lightyears (a unit of astronomical distance equivalent to the distance that light travels in one year).
@@ -121,17 +184,69 @@
       </article>
 
       <article class="article">
-        <h1>Gravitational slingshot</h1>
-        <p>
-          <br>Gravity assistance can be used to accelerate a spacecraft, that is, to increase or decrease its speed or redirect its path. The "assist" is provided by the motion of the gravitating body as it pulls on the spacecraft (read more on <a href='https://en.wikipedia.org/wiki/Gravity_assist' target='_blank'>Wiki</a>).
+        <h1>Mystery matter</h1>
+        <p><br>
+          The Universe is thought to consist of three types of substance:
+        <br><br></p>
+        <ul class="customIndent">
+          <li><strong>Normal matter</strong> consists of the atoms that make up stars, planets, human beings and every other visible object in the Universe.</li>
+          <li><strong>Dark energy</strong> is the name given to the mysterious force that's causing the rate of expansion of our universe to accelerate over time, rather than to slow down.</li>
+          <li><strong>Dark matter</strong> is the name we give to all the mass in the universe that remains invisible.</li>
+        </ul>
+          <br>This is the composition of the universe:
           <br>
           <p>
             <div class = "centerimage">
-              <img class="articlepic" src='../images/voyager1_trajectory.gif' alt="voyager1 trajectory picture"/>
-              <br>Voyager 1 using gravity assistance from Jupiter and Saturn.
+              <div id="piechart" align='center'></div>
+                 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+                 <script type="text/javascript">
+                    // Load google charts
+                    google.charts.load('current', {'packages':['corechart']});
+                    google.charts.setOnLoadCallback(drawChart);
+
+                    // Draw the chart and set the chart values
+                    function drawChart() {
+                     var data = google.visualization.arrayToDataTable([
+                     ['Composition', 'Percentage'],
+                     ['Dark Energy', 69],
+                     ['Dark Matter', 26],
+                     ['Ordinary Matter', 5],
+                    ]);
+
+                     // Optional; add a title and set the width and height of the chart
+                     var options = {'title':'Composition of the universe', 'width':550, 'height':400};
+
+                     // Display the chart inside the <div> element with id="piechart"
+                     var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+                     chart.draw(data, options);
+                    }
+                  </script>
             </div>
         </p>
+        <p>
+          This simple chart was created and embedded using the Chart API at <a href="https://developers.google.com/chart" target='_blank'>google.com/chart</a>.
+          <br><br> It illustrates how little we know about reality. Because of Dark Energy, the universe is going through an accelerated period of expansion: other star clusters are moving away from us, making large-scale exploration near impossible in the distant future.
 
+        </p>
+        <p><br></p>
+      </article>
+
+      <article class="article">
+        <h1>Permanent residence</h1>
+        <p>
+          <br>The International Space Station is a co-operative programme between Europe, the United States, Russia, Canada, and Japan for the joint development, operation and utilisation of a permanently inhabited Space Station in low Earth orbit.
+          <br><br>The station serves as a microgravity and space environment research laboratory in which scientific research is conducted in astrobiology, astronomy, meteorology, physics, and other fields.The ISS is suited for testing the spacecraft systems and equipment required for possible future long-duration missions to the Moon and Mars.
+          <br>
+          <br>The ISS consists of pressurised habitation modules, structural trusses, photovoltaic solar arrays, thermal radiators, docking ports, experiment bays and robotic arms. The video below shows you a look inside.<br><br>
+          <p>
+            <div class = "centerimage">
+              <iframe width="360" height="203" src="https://www.youtube-nocookie.com/embed/06-Xm3_Ze1o?start=18" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <br>Tour of International Space Station - Inside ISS.
+            </div>
+        </p>
+        <p><br>
+          The ISS circles the Earth in roughly 93 minutes, completing 15.5 orbits per day. (read more on <a href='https://en.wikipedia.org/wiki/International_Space_Station' target='_blank'>Wiki</a>).
+        </p>
         <p><br></p>
       </article>
 

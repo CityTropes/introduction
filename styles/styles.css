@@ -101,6 +101,7 @@ a:hover, a:active {
   border-bottom-width: thin;
   border-color: #f1f1f1;
   padding-top: 15px;
+  padding-bottom: 20px;
 }
 
 .profilepic{
@@ -178,6 +179,9 @@ p.footertext {
   .row {
     flex-direction: column;
   }
+  .articlepic {
+    width: 80%;
+  }
 }
 /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
 @media screen and (max-width: 400px) {
@@ -188,4 +192,7 @@ p.footertext {
   .articlepic {
     width: 60%;
   }
+/*  .centerimage {
+    width: 60%;
+  }*/
 }
